@@ -15,7 +15,7 @@ body {
 
 
     .page_one {
-  background-image: url('./tattopc/tattoo.jpg');
+  background-image: url('tattopc/tattoo.jpg');
   background-size: cover;
   /* background-position: center; */
   height: 300px;
@@ -26,7 +26,7 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
  .page_two {
-  background-image: url('./tattopc/tattoo.jpg');
+  background-image: url('tattopc/tattoo.jpg');
   background-size: 50px 50px;
   background-size: cover;
   height: 300px;
