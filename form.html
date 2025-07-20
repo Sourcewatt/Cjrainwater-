@@ -47,4 +47,66 @@
 
         <label><h3>Select your state:</h3>
           <select id="state" name="state">
-            <option value="">--Please choose--</opt
+            <option value="">--Please choose--</option>
+            <option value="lagos">Lagos</option>
+            <option value="abuja">FCT (Abuja)</option>
+            <option value="oyo">Oyo</option>
+            <option value="rivers">Rivers</option>
+            <!-- Add more as needed -->
+          </select>
+        </label><br><br>
+      </div>
+
+      <div class="sel">
+        <label><h3>Select Age:</h3>
+          <select name="age_group">
+            <option value="">--------</option>
+            <option value="18-40">18–40</option>
+            <option value="40-60">40–60</option>
+            <option value="60+">60 and above</option>
+          </select>
+        </label><br><br>
+
+        <h3>Choose your gender:</h3>
+        <label><input type="radio" name="gender" value="male" /> Male</label><br>
+        <label><input type="radio" name="gender" value="female" /> Female</label><br>
+        <label><input type="radio" name="gender" value="other" /> Other</label><br><br>
+
+        <label><h3>Select Appointment Date:</h3>
+          <input type="date" name="appointment_date" required />
+        </label><br><br>
+      </div>
+
+      <div class="class_b">
+        <label>
+          <textarea name="message" cols="50" rows="10" placeholder="Your message..."></textarea>
+        </label><br>
+
+        <h3>Negotiating a contract or agreement of 70%</h3>
+        <label>Enter Amount: <input type="number" id="amount" placeholder="₦" /></label>
+        <button type="button" onclick="calculatePercentage()">Get 70%</button>
+        <p>70% of the amount is: <span id="result">₦0</span></p>
+      </div>
+
+      <div class="class_c notif">
+        <h3>Submit your application</h3>
+        <p>You will get a notification once you submit your application.</p><br>
+
+        <label>Name: <input type="text" name="name" required /></label><br><br>
+        <label>Email: <input type="email" name="email" required /></label><br><br>
+
+        <button type="submit">Submit Application</button>
+      </div>
+
+    </div>
+  </form>
+
+  <script>
+    function calculatePercentage() {
+      const amount = document.getElementById("amount").value;
+      const result = amount * 0.7;
+      document.getElementById("result").innerText = "₦" + result.toLocaleString();
+    }
+  </script>
+</body>
+</html>
